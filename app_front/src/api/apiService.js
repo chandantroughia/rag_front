@@ -59,5 +59,21 @@ export const documentSimilarity = async (file, topN, llmType, vectorStoreType) =
 
   return response.data;
 };
+
+// Document multimodal API for ChatWithDocument.js
+export const documentMultimodal = async (query, file, llmType) => {
+  const formData = new FormData();
+  formData.append("query", query);
+  formData.append("file", file);
+  formData.append("llm_type", llmType);
+
+  const response = await api.post("/multimodal/", formData, {
+    headers: {
+      "Content-Type": "multipart/form-data",
+    },
+  });
+  return response.data;
+};
+
 export default api;
 
