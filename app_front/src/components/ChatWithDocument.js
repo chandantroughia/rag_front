@@ -6,6 +6,7 @@ function ChatWithDocument() {
   const [input, setInput] = useState(""); // User query input
   const [messages, setMessages] = useState([]); // Chat history
   const [loading, setLoading] = useState(false); // Loading state for API responses
+  const [llmType, setLlmType] = useState("gpt-4o"); // Default LLM type
 
   // Function to handle file upload
   const handleFileUpload = (event) => {
@@ -37,8 +38,8 @@ function ChatWithDocument() {
     setLoading(true); // Show loading indicator
 
     try {
-      // Call the API with the query and file
-      const response = await documentMultimodal(input, uploadedFile, "gpt-4o");
+      // Call the API with the query, file, and selected LLM
+      const response = await documentMultimodal(input, uploadedFile, llmType);
 
       // Extract LLM response
       const llmResponse = response?.llm_response || "No response from LLM.";
@@ -128,6 +129,21 @@ function ChatWithDocument() {
             </span>
           )}
         </div>
+
+        {/* LLM Selection Dropdown */}
+        <select
+          value={llmType}
+          onChange={(e) => setLlmType(e.target.value)}
+          style={{
+            padding: "5px",
+            borderRadius: "5px",
+            border: "1px solid #ccc",
+          }}
+        >
+          <option value="gpt-4o">GPT-4o</option>
+          <option value="gemini flash">Gemini Flash</option>
+          <option value="gemini pro">Gemini Pro</option>
+        </select>
       </div>
 
       {/* Chat History */}
