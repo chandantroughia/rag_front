@@ -1,0 +1,279 @@
+2025-01-28 13:47:46 | INFO | Text similarity endpoint accessed with query: 'hello', top_n: 5, llm_type: gpt-4, vector_store_type: chroma
+2025-01-28 13:47:46 | INFO | Starting text similarity process with LLM: gpt-4, Vector Store: chroma
+2025-01-28 13:47:46 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-01-28 13:47:46 | ERROR | An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 13:47:46 | ERROR | Error in text_similarity: 500: An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 13:53:53 | INFO | Text similarity endpoint accessed with query: 'hello', top_n: 5, llm_type: gpt-4, vector_store_type: chroma
+2025-01-28 13:53:53 | INFO | Starting text similarity process with LLM: gpt-4, Vector Store: chroma
+2025-01-28 13:53:53 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-01-28 13:53:53 | ERROR | An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 13:53:53 | ERROR | Error in text_similarity: 500: An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 13:54:07 | INFO | Text similarity endpoint accessed with query: 'hello', top_n: 5, llm_type: gpt-4, vector_store_type: chroma
+2025-01-28 13:54:07 | INFO | Starting text similarity process with LLM: gpt-4, Vector Store: chroma
+2025-01-28 13:54:07 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-01-28 13:54:07 | ERROR | An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 13:54:07 | ERROR | Error in text_similarity: 500: An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 14:30:15 | INFO | Text similarity endpoint accessed with query: 'hello', top_n: 5, llm_type: gpt-4, vector_store_type: chroma
+2025-01-28 14:30:15 | INFO | Starting text similarity process with LLM: gpt-4, Vector Store: chroma
+2025-01-28 14:30:15 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-01-28 14:30:15 | ERROR | An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 14:30:15 | ERROR | Error in text_similarity: 500: An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 14:32:49 | INFO | Text similarity endpoint accessed with query: 'hello', top_n: 5, llm_type: gpt-4, vector_store_type: chroma
+2025-01-28 14:32:49 | INFO | Starting text similarity process with LLM: gpt-4, Vector Store: chroma
+2025-01-28 14:32:49 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-01-28 14:32:49 | ERROR | An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 14:32:49 | ERROR | Error in text_similarity: 500: An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-01-28 14:33:31 | INFO | Text similarity endpoint accessed with query: 'Chandan', top_n: 5, llm_type: gpt-4, vector_store_type: chroma
+2025-01-28 14:33:31 | INFO | Starting text similarity process with LLM: gpt-4, Vector Store: chroma
+2025-01-28 14:33:31 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-01-28 14:33:31 | INFO | New database file created and persisted at: app/database/chroma.sqlite3
+2025-01-28 14:33:31 | INFO | Database file copied to backup folder: app/backup/chroma.sqlite3
+2025-01-28 14:33:31 | INFO | Vector store initialized successfully.
+2025-01-28 14:33:31 | INFO | Performing similarity search for query: Chandan
+2025-01-28 14:33:33 | INFO | Similarity search completed. Retrieved 0 results.
+2025-01-28 14:33:33 | WARNING | No relevant documents found in similarity search.
+2025-01-28 14:40:49 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 14:40:49 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 14:40:50 | INFO | Vector store initialized successfully.
+2025-01-28 14:40:50 | INFO | Performing similarity search for query: nahi
+2025-01-28 14:40:50 | INFO | Similarity search completed. Retrieved 0 results.
+2025-01-28 14:40:50 | WARNING | No relevant documents found in similarity search.
+2025-01-28 14:41:21 | INFO | Starting text similarity process with LLM: gemini flash, Vector Store: chroma
+2025-01-28 14:41:21 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 14:41:21 | INFO | Vector store initialized successfully.
+2025-01-28 14:41:21 | INFO | Performing similarity search for query: dsgafdg
+2025-01-28 14:41:22 | INFO | Similarity search completed. Retrieved 0 results.
+2025-01-28 14:41:22 | WARNING | No relevant documents found in similarity search.
+2025-01-28 14:58:57 | INFO | Upload endpoint accessed with file: Mehak Chib Resume.pdf and vector_store_type: chroma
+2025-01-28 14:58:57 | INFO | Starting document upload and processing with vector store type: 'chroma'
+2025-01-28 14:58:57 | INFO | Validating file type for file: 'Mehak Chib Resume.pdf'
+2025-01-28 14:58:57 | INFO | File type validated successfully.
+2025-01-28 14:58:57 | INFO | Loading document content from file: 'Mehak Chib Resume.pdf'
+2025-01-28 14:58:57 | INFO | Document loaded successfully. 1 documents found.
+2025-01-28 14:58:57 | INFO | Initializing vector store.
+2025-01-28 14:58:57 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 14:58:57 | INFO | Vector store initialized successfully.
+2025-01-28 14:58:57 | INFO | Splitting documents into chunks with chunk_size=28000 and chunk_overlap=1000.
+2025-01-28 14:58:57 | INFO | Document split into 1 chunks.
+2025-01-28 14:58:57 | INFO | Adding chunks to the vector store.
+2025-01-28 14:58:58 | INFO | Chunks added to vector store and persisted successfully.
+2025-01-28 14:58:58 | INFO | Creating backup of the vector store.
+2025-01-28 14:58:58 | INFO | Backup created successfully at: app/backup/chroma.sqlite3
+2025-01-28 14:58:58 | INFO | Document uploaded and processed successfully: Mehak Chib Resume.pdf
+2025-01-28 14:59:16 | INFO | Document similarity endpoint accessed with file: 'Mehak Chib Resume.pdf', top_n: 5, vector_store_type: chroma
+2025-01-28 14:59:16 | INFO | Starting document similarity process with LLM: gpt-4, Vector Store: chroma
+2025-01-28 14:59:16 | INFO | Processing file: 'Mehak Chib Resume.pdf'
+2025-01-28 14:59:17 | INFO | File processed successfully, query generated from file content.
+2025-01-28 14:59:17 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 14:59:17 | INFO | Vector store initialized successfully.
+2025-01-28 14:59:17 | INFO | Performing similarity search with top_n: 5
+2025-01-28 14:59:18 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 14:59:18 | INFO | Context prepared for LLM.
+2025-01-28 14:59:18 | INFO | Initializing LLM: gpt-4
+2025-01-28 14:59:18 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 14:59:29 | INFO | GPT-4 response received.
+2025-01-28 14:59:29 | INFO | Document similarity process completed successfully.
+2025-01-28 14:59:29 | INFO | Document similarity search completed successfully.
+2025-01-28 15:00:00 | INFO | Inspect vector store endpoint accessed.
+2025-01-28 15:00:00 | INFO | Starting vector store inspection.
+2025-01-28 15:00:00 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:00:00 | INFO | Vector store successfully initialized.
+2025-01-28 15:00:00 | INFO | Retrieved items from the vector store.
+2025-01-28 15:00:00 | INFO | Vector store inspection completed successfully.
+2025-01-28 15:00:00 | INFO | Vector store inspection completed successfully.
+2025-01-28 15:00:26 | INFO | Document similarity endpoint accessed with file: 'Mehak Chib Resume.pdf', top_n: 5, vector_store_type: chroma
+2025-01-28 15:00:26 | INFO | Starting document similarity process with LLM: gpt-4, Vector Store: chroma
+2025-01-28 15:00:26 | INFO | Processing file: 'Mehak Chib Resume.pdf'
+2025-01-28 15:00:26 | INFO | File processed successfully, query generated from file content.
+2025-01-28 15:00:26 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:00:26 | INFO | Vector store initialized successfully.
+2025-01-28 15:00:26 | INFO | Performing similarity search with top_n: 5
+2025-01-28 15:00:27 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:00:27 | INFO | Context prepared for LLM.
+2025-01-28 15:00:27 | INFO | Initializing LLM: gpt-4
+2025-01-28 15:00:27 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:00:34 | INFO | GPT-4 response received.
+2025-01-28 15:00:34 | INFO | Document similarity process completed successfully.
+2025-01-28 15:00:34 | INFO | Document similarity search completed successfully.
+2025-01-28 15:01:11 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:01:11 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:01:11 | INFO | Vector store initialized successfully.
+2025-01-28 15:01:11 | INFO | Performing similarity search for query: Mehak
+2025-01-28 15:01:12 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:01:12 | INFO | Context prepared for LLM.
+2025-01-28 15:01:12 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:01:12 | ERROR | Invalid LLM type specified: gpt-4o
+2025-01-28 15:01:12 | ERROR | An error occurred during text similarity: Invalid LLM type specified.
+2025-01-28 15:04:22 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:04:22 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:04:22 | INFO | Vector store initialized successfully.
+2025-01-28 15:04:22 | INFO | Performing similarity search for query: Mehak
+2025-01-28 15:04:23 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:04:23 | INFO | Context prepared for LLM.
+2025-01-28 15:04:23 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:04:23 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:04:53 | INFO | GPT-4 response received.
+2025-01-28 15:04:53 | INFO | Text similarity process completed successfully.
+2025-01-28 15:06:09 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:06:09 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:06:09 | INFO | Vector store initialized successfully.
+2025-01-28 15:06:09 | INFO | Performing similarity search for query: Mehak
+2025-01-28 15:06:10 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:06:10 | INFO | Context prepared for LLM.
+2025-01-28 15:06:10 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:06:10 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:06:25 | INFO | GPT-4 response received.
+2025-01-28 15:06:25 | INFO | Text similarity process completed successfully.
+2025-01-28 15:10:42 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:10:42 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:10:42 | INFO | Vector store initialized successfully.
+2025-01-28 15:10:42 | INFO | Performing similarity search for query: Who is Mekak in one line?
+2025-01-28 15:10:42 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:10:42 | INFO | Context prepared for LLM.
+2025-01-28 15:10:42 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:10:42 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:10:48 | INFO | GPT-4 response received.
+2025-01-28 15:10:48 | INFO | Text similarity process completed successfully.
+2025-01-28 15:20:06 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:20:06 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:20:06 | INFO | Vector store initialized successfully.
+2025-01-28 15:20:06 | INFO | Performing similarity search for query: What master's degree Mehak has?
+2025-01-28 15:20:07 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:20:07 | INFO | Context prepared for LLM.
+2025-01-28 15:20:07 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:20:07 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:20:14 | INFO | GPT-4 response received.
+2025-01-28 15:20:14 | INFO | Text similarity process completed successfully.
+2025-01-28 15:22:34 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:22:34 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:22:34 | INFO | Vector store initialized successfully.
+2025-01-28 15:22:34 | INFO | Performing similarity search for query: Who is Mehak?
+2025-01-28 15:22:34 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:22:34 | INFO | Context prepared for LLM.
+2025-01-28 15:22:34 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:22:34 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:22:42 | INFO | GPT-4 response received.
+2025-01-28 15:22:42 | INFO | Text similarity process completed successfully.
+2025-01-28 15:23:42 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:23:42 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:23:42 | INFO | Vector store initialized successfully.
+2025-01-28 15:23:42 | INFO | Performing similarity search for query: hi
+2025-01-28 15:23:42 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:23:42 | INFO | Context prepared for LLM.
+2025-01-28 15:23:42 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:23:42 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:23:56 | INFO | GPT-4 response received.
+2025-01-28 15:23:56 | INFO | Text similarity process completed successfully.
+2025-01-28 15:24:36 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:24:36 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:24:36 | INFO | Vector store initialized successfully.
+2025-01-28 15:24:36 | INFO | Performing similarity search for query: Name the degrees Mehak has, Just return the degrees, nothing more
+2025-01-28 15:24:37 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:24:37 | INFO | Context prepared for LLM.
+2025-01-28 15:24:37 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:24:37 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:24:44 | INFO | GPT-4 response received.
+2025-01-28 15:24:44 | INFO | Text similarity process completed successfully.
+2025-01-28 15:25:35 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:25:35 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:25:35 | INFO | Vector store initialized successfully.
+2025-01-28 15:25:35 | INFO | Performing similarity search for query: Name the degrees Mehak has, Just return the degrees, nothing more
+2025-01-28 15:25:36 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:25:36 | INFO | Context prepared for LLM.
+2025-01-28 15:25:36 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:25:36 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:25:39 | INFO | GPT-4 response received.
+2025-01-28 15:25:39 | INFO | Text similarity process completed successfully.
+2025-01-28 15:28:46 | INFO | Document similarity endpoint accessed with file: 'Mehak Chib Resume.pdf', top_n: 5, vector_store_type: chroma
+2025-01-28 15:28:46 | INFO | Starting document similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:28:46 | INFO | Processing file: 'Mehak Chib Resume.pdf'
+2025-01-28 15:28:46 | INFO | File processed successfully, query generated from file content.
+2025-01-28 15:28:46 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:28:46 | INFO | Vector store initialized successfully.
+2025-01-28 15:28:46 | INFO | Performing similarity search with top_n: 5
+2025-01-28 15:28:46 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:28:46 | INFO | Context prepared for LLM.
+2025-01-28 15:28:46 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:28:46 | ERROR | Invalid LLM type specified: gpt-4o
+2025-01-28 15:28:46 | ERROR | An error occurred during document similarity: Invalid LLM type specified.
+2025-01-28 15:28:46 | ERROR | Error in document_similarity_search: 500: An error occurred during document similarity: Invalid LLM type specified.
+2025-01-28 15:29:43 | INFO | Document similarity endpoint accessed with file: 'Mehak Chib Resume.pdf', top_n: 5, vector_store_type: chroma
+2025-01-28 15:29:43 | INFO | Starting document similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:29:43 | INFO | Processing file: 'Mehak Chib Resume.pdf'
+2025-01-28 15:29:44 | INFO | File processed successfully, query generated from file content.
+2025-01-28 15:29:44 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:29:44 | INFO | Vector store initialized successfully.
+2025-01-28 15:29:44 | INFO | Performing similarity search with top_n: 5
+2025-01-28 15:29:45 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:29:45 | INFO | Context prepared for LLM.
+2025-01-28 15:29:45 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:29:45 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:29:50 | INFO | GPT-4 response received.
+2025-01-28 15:29:50 | INFO | Document similarity process completed successfully.
+2025-01-28 15:29:50 | INFO | Document similarity search completed successfully.
+2025-01-28 15:35:06 | INFO | Document similarity endpoint accessed with file: 'Mehak Chib Resume.pdf', top_n: 5, vector_store_type: chroma
+2025-01-28 15:35:06 | INFO | Starting document similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:35:06 | INFO | Processing file: 'Mehak Chib Resume.pdf'
+2025-01-28 15:35:06 | INFO | File processed successfully, query generated from file content.
+2025-01-28 15:35:06 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:35:06 | INFO | Vector store initialized successfully.
+2025-01-28 15:35:06 | INFO | Performing similarity search with top_n: 5
+2025-01-28 15:35:07 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:35:07 | INFO | Context prepared for LLM.
+2025-01-28 15:35:07 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:35:07 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:35:09 | INFO | GPT-4 response received.
+2025-01-28 15:35:09 | INFO | Document similarity process completed successfully.
+2025-01-28 15:35:09 | INFO | Document similarity search completed successfully.
+2025-01-28 15:35:09 | INFO | Document similarity endpoint accessed with file: 'Mehak Chib Resume.pdf', top_n: 5, vector_store_type: chroma
+2025-01-28 15:35:09 | INFO | Starting document similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:35:09 | INFO | Processing file: 'Mehak Chib Resume.pdf'
+2025-01-28 15:35:09 | INFO | File processed successfully, query generated from file content.
+2025-01-28 15:35:09 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:35:09 | INFO | Vector store initialized successfully.
+2025-01-28 15:35:09 | INFO | Performing similarity search with top_n: 5
+2025-01-28 15:35:10 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:35:10 | INFO | Context prepared for LLM.
+2025-01-28 15:35:10 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:35:10 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:35:17 | INFO | GPT-4 response received.
+2025-01-28 15:35:17 | INFO | Document similarity process completed successfully.
+2025-01-28 15:35:17 | INFO | Document similarity search completed successfully.
+2025-01-28 15:35:51 | INFO | Document similarity endpoint accessed with file: 'Mehak Chib Resume.pdf', top_n: 5, vector_store_type: chroma
+2025-01-28 15:35:51 | INFO | Starting document similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:35:51 | INFO | Processing file: 'Mehak Chib Resume.pdf'
+2025-01-28 15:35:51 | INFO | File processed successfully, query generated from file content.
+2025-01-28 15:35:51 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:35:51 | INFO | Vector store initialized successfully.
+2025-01-28 15:35:51 | INFO | Performing similarity search with top_n: 5
+2025-01-28 15:35:52 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:35:52 | INFO | Context prepared for LLM.
+2025-01-28 15:35:52 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:35:52 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:35:57 | INFO | GPT-4 response received.
+2025-01-28 15:35:57 | INFO | Document similarity process completed successfully.
+2025-01-28 15:35:57 | INFO | Document similarity search completed successfully.
+2025-01-28 15:37:40 | INFO | Document similarity endpoint accessed with file: 'Mehak Chib Resume.pdf', top_n: 5, vector_store_type: chroma
+2025-01-28 15:37:40 | INFO | Starting document similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:37:40 | INFO | Processing file: 'Mehak Chib Resume.pdf'
+2025-01-28 15:37:40 | INFO | File processed successfully, query generated from file content.
+2025-01-28 15:37:40 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:37:40 | INFO | Vector store initialized successfully.
+2025-01-28 15:37:40 | INFO | Performing similarity search with top_n: 5
+2025-01-28 15:37:41 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:37:41 | INFO | Context prepared for LLM.
+2025-01-28 15:37:41 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:37:41 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:37:42 | INFO | GPT-4 response received.
+2025-01-28 15:37:42 | INFO | Document similarity process completed successfully.
+2025-01-28 15:37:42 | INFO | Document similarity search completed successfully.
+2025-01-28 15:40:49 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-01-28 15:40:49 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-01-28 15:40:49 | INFO | Vector store initialized successfully.
+2025-01-28 15:40:49 | INFO | Performing similarity search for query: Who is mehak
+2025-01-28 15:40:50 | INFO | Similarity search completed. Retrieved 1 results.
+2025-01-28 15:40:50 | INFO | Context prepared for LLM.
+2025-01-28 15:40:50 | INFO | Initializing LLM: gpt-4o
+2025-01-28 15:40:50 | INFO | Calling GPT-4 with the prepared context.
+2025-01-28 15:40:59 | INFO | GPT-4 response received.
+2025-01-28 15:40:59 | INFO | Text similarity process completed successfully.

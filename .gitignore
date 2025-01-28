@@ -25,3 +25,5 @@ yarn-error.log*
 # Environment variables
 .venv
 node_modules
+.env
+__pycache__

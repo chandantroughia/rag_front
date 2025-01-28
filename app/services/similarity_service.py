@@ -40,19 +40,18 @@ async def perform_document_similarity(file, top_n, vector_store_type, llm_type):
 
         # Step 5: Initialize and call LLM
         logger.info("Initializing LLM: {}", llm_type)
-        if llm_type == "gpt-4":
+        if llm_type == "gpt-4o":
             client = AsyncOpenAI()
             openai.api_key = os.getenv("OPENAI_API_KEY")
             logger.info("Calling GPT-4 with the prepared context.")
             llm_response = await client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-4o",
                 messages=[
                     {"role": "system", "content": "You are a highly intelligent assistant."},
                     {"role": "user", "content": f"""
                     Using the provided context, perform the following tasks:
-                    1. Summarize the key information from the context.
-                    2. Answer the query: "{query}".
-                    3. If the context doesn't contain relevant information, respond with: 'The context does not contain sufficient information to answer the query.'
+                    1. Answer the query: "{query}".
+                    2. If the context doesn't contain relevant information, respond with: 'The context does not contain sufficient information to answer the query.'
 
                     Context:
                     {context}
@@ -116,7 +115,7 @@ async def perform_text_similarity(query, top_n, llm_type, vector_store_type):
 
         # Step 4: Initialize and call LLM
         logger.info("Initializing LLM: {}", llm_type)
-        if llm_type == "gpt-4":
+        if llm_type == "gpt-4o":
             client = AsyncOpenAI()
             openai.api_key = os.getenv("OPENAI_API_KEY")
             logger.info("Calling GPT-4 with the prepared context.")
@@ -126,9 +125,8 @@ async def perform_text_similarity(query, top_n, llm_type, vector_store_type):
                     {"role": "system", "content": "You are a highly intelligent assistant."},
                     {"role": "user", "content": f"""
                     Using the provided context, perform the following tasks:
-                    1. Summarize the key information from the context.
-                    2. Answer the query: "{query}".
-                    3. If the context doesn't contain relevant information, respond with: 'The context does not contain sufficient information to answer the query.'
+                    1. Answer the query: "{query}".
+                    2. If the context doesn't contain relevant information, respond with: 'The context does not contain sufficient information to answer the query.'
 
                     Context:
                     {context}

@@ -1,31 +1,73 @@
 import React, { useState } from "react";
+import { textSimilarity } from "../api/apiService";
 
 function ChatWithLLM({ messages, setMessages }) {
-  const [input, setInput] = useState(""); // To hold the current user input
+  const [input, setInput] = useState(""); // User input
+  const [topN, setTopN] = useState(5); // Top N similar results
+  const [llmType, setLlmType] = useState("gpt-4o"); // Default LLM type
+  const [vectorStoreType, setVectorStoreType] = useState("chroma"); // Default Vector Store Type
+  const [loading, setLoading] = useState(false); // LLM is thinking
 
   // Function to handle sending a message
-  const handleSendMessage = () => {
+  const handleSendMessage = async () => {
     if (input.trim() !== "") {
-      // Add the user message to the chat history
+      // Add user message to chat history
       setMessages((prevMessages) => [
         ...prevMessages,
         { type: "user", text: input },
       ]);
-      setInput(""); // Clear the input box
 
-      // Simulate LLM response (for now)
-      setTimeout(() => {
-        setMessages((prevMessages) => [
-          ...prevMessages,
-          { type: "llm", text: "This is a simulated LLM response." },
-        ]);
-      }, 1000);
+      // Show "LLM is thinking..." message
+      setLoading(true);
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        { type: "system", text: "🤖 LLM is thinking..." },
+      ]);
+
+      try {
+        // Call text similarity API
+        const response = await textSimilarity(input, topN, llmType, vectorStoreType);
+
+        // Extract LLM response
+        const llmResponse = response?.llm_response || "No response from LLM.";
+
+        // Extract grounding information
+        let groundingInfo = "";
+        if (response?.retrieved_documents && response.retrieved_documents.length > 0) {
+          groundingInfo = `\n\n----------\n**Grounding:**`;
+          response.retrieved_documents.forEach((doc, index) => {
+            const source = doc?.metadata?.source || "Unknown Source";
+            const page = doc?.metadata?.page !== undefined ? doc.metadata.page : "N/A";
+            const score = doc?.score !== undefined ? doc.score.toFixed(6) : "N/A";
+
+            groundingInfo += `\n${index + 1}. Source: ${source}, Page: ${page}, Score: ${score}`;
+          });
+        }
+
+        // Remove "LLM is thinking..." and add real response
+        setMessages((prevMessages) =>
+          prevMessages
+            .filter((msg) => msg.type !== "system") // Remove "LLM is thinking..."
+            .concat({ type: "llm", text: `${llmResponse}${groundingInfo}` })
+        );
+      } catch (error) {
+        console.error("Error fetching LLM response:", error);
+        setMessages((prevMessages) =>
+          prevMessages
+            .filter((msg) => msg.type !== "system") // Remove "LLM is thinking..."
+            .concat({ type: "llm", text: "Error: Unable to fetch response from the API." })
+        );
+      }
+
+      // Hide "LLM is thinking..." message
+      setLoading(false);
+      setInput(""); // Clear the input box
     }
   };
 
   // Function to clear the chat
   const handleClearChat = () => {
-    setMessages([]);
+    setMessages([]); // Reset the messages array
   };
 
   // Function to handle key presses
@@ -74,8 +116,13 @@ function ChatWithLLM({ messages, setMessages }) {
                 padding: "10px 15px",
                 borderRadius: "15px",
                 backgroundColor:
-                  message.type === "user" ? "#007bff" : "#e6e6e6",
+                  message.type === "user"
+                    ? "#007bff"
+                    : message.type === "system"
+                    ? "#f4c542"
+                    : "#e6e6e6",
                 color: message.type === "user" ? "#fff" : "#000",
+                fontStyle: message.type === "system" ? "italic" : "normal",
                 maxWidth: "80%",
               }}
             >
@@ -83,6 +130,65 @@ function ChatWithLLM({ messages, setMessages }) {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Options Section */}
+      <div
+        style={{
+          display: "flex",
+          gap: "10px",
+          padding: "10px",
+          borderTop: "1px solid #ccc",
+          backgroundColor: "#f5f5f5",
+          alignItems: "center",
+        }}
+      >
+        {/* Top N Dropdown */}
+        <select
+          value={topN}
+          onChange={(e) => setTopN(Number(e.target.value))}
+          style={{
+            padding: "5px",
+            borderRadius: "5px",
+            border: "1px solid #ccc",
+          }}
+        >
+          {[1, 3, 5, 10].map((n) => (
+            <option key={n} value={n}>
+              Top {n}
+            </option>
+          ))}
+        </select>
+
+        {/* LLM Type Dropdown */}
+        <select
+          value={llmType}
+          onChange={(e) => setLlmType(e.target.value)}
+          style={{
+            padding: "5px",
+            borderRadius: "5px",
+            border: "1px solid #ccc",
+          }}
+        >
+          <option value="gpt-4o">GPT-4o</option>
+          <option value="gemini flash">Gemini Flash</option>
+          <option value="gemini pro">Gemini Pro</option>
+        </select>
+
+        {/* Vector Store Dropdown */}
+        <select
+          value={vectorStoreType}
+          onChange={(e) => setVectorStoreType(e.target.value)}
+          style={{
+            padding: "5px",
+            borderRadius: "5px",
+            border: "1px solid #ccc",
+          }}
+        >
+          <option value="chroma">Chroma</option>
+          <option value="vertexai">Vertex AI</option>
+          <option value="mongodb">MongoDB</option>
+        </select>
       </div>
 
       {/* Input and Clear Chat */}
