@@ -35,20 +35,24 @@ function ChatWithDocument() {
       { type: "user", text: input },
     ]);
 
+    // Clear input box immediately
+    setInput("");
     setLoading(true); // Show loading indicator
 
     try {
       // Call the API with the query, file, and selected LLM
       const response = await documentMultimodal(input, uploadedFile, llmType);
 
-      // Extract LLM response
-      const llmResponse = response?.llm_response || "No response from LLM.";
+      // Extract LLM responses
+      const llmResponses = response?.responses || ["No response from LLM."];
 
-      // Add LLM response to chat history
-      setMessages((prevMessages) => [
-        ...prevMessages,
-        { type: "llm", text: llmResponse },
-      ]);
+      // Add each response from the array to the chat history
+      llmResponses.forEach((llmResponse) => {
+        setMessages((prevMessages) => [
+          ...prevMessages,
+          { type: "llm", text: llmResponse },
+        ]);
+      });
     } catch (error) {
       console.error("Error fetching LLM response:", error);
       setMessages((prevMessages) => [
@@ -58,7 +62,6 @@ function ChatWithDocument() {
     }
 
     setLoading(false); // Hide loading indicator
-    setInput(""); // Clear input field
   };
 
   // Function to handle key presses
