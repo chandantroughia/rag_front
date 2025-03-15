@@ -277,3 +277,24 @@
 2025-01-28 15:40:50 | INFO | Calling GPT-4 with the prepared context.
 2025-01-28 15:40:59 | INFO | GPT-4 response received.
 2025-01-28 15:40:59 | INFO | Text similarity process completed successfully.
+2025-03-15 14:36:49 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-03-15 14:36:49 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-03-15 14:36:49 | ERROR | An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-03-15 14:49:27 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-03-15 14:49:27 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-03-15 14:49:27 | ERROR | An error occurred during text similarity: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+2025-03-15 14:50:35 | INFO | Starting text similarity process with LLM: gpt-4o, Vector Store: chroma
+2025-03-15 14:50:35 | INFO | Neither database file nor backup found. Creating a new database file.
+2025-03-15 14:50:35 | INFO | New database file created and persisted at: app/database/chroma.sqlite3
+2025-03-15 14:50:35 | INFO | Database file copied to backup folder: app/backup/chroma.sqlite3
+2025-03-15 14:50:35 | INFO | Vector store initialized successfully.
+2025-03-15 14:50:35 | INFO | Performing similarity search for query: hi
+2025-03-15 14:50:37 | INFO | Similarity search completed. Retrieved 0 results.
+2025-03-15 14:50:37 | WARNING | No relevant documents found in similarity search.
+2025-03-15 14:50:48 | INFO | Inspect vector store endpoint accessed.
+2025-03-15 14:50:48 | INFO | Starting vector store inspection.
+2025-03-15 14:50:48 | INFO | Database file found in the database folder. Loading from: app/database/chroma.sqlite3
+2025-03-15 14:50:48 | INFO | Vector store successfully initialized.
+2025-03-15 14:50:48 | INFO | Retrieved items from the vector store.
+2025-03-15 14:50:48 | INFO | Vector store inspection completed successfully.
+2025-03-15 14:50:48 | INFO | Vector store inspection completed successfully.
