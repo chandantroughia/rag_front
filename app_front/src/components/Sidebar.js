@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FaHome } from "react-icons/fa";
 import { IoChatboxEllipsesOutline, IoDocumentAttachOutline } from "react-icons/io5";
 import { MdOutlineDriveFolderUpload } from "react-icons/md";
 import logo from "../assets/logo.png";

@@ -6,7 +6,7 @@ function ChatWithLLM({ messages, setMessages }) {
   const [topN, setTopN] = useState(5); // Top N similar results
   const [llmType, setLlmType] = useState("gpt-4o"); // Default LLM type
   const [vectorStoreType, setVectorStoreType] = useState("chroma"); // Default Vector Store Type
-  const [loading, setLoading] = useState(false); // LLM is thinking
+  const [, setLoading] = useState(false); // LLM is thinking
 
   // Function to handle sending a message
   const handleSendMessage = async () => {
